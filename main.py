@@ -8,7 +8,7 @@ def exercice2():
 def exercice3():
     print("bonjour")
     print("je m'apelle Alexis")
-    print("je suis etudiant")
+    print("je suis etudiant, mais")
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
