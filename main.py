@@ -8,7 +8,7 @@ def exercice2():
 def exercice3():
     print("bonjour")
     print("je m'apelle Alexis")
-    print("je suis etudiant, mais")
+    print("je suis etudiant")
 
 def exercice4():
    an=2025-int(input("année de naissance "))
@@ -20,6 +20,27 @@ def exercice5():
     addition=(chiffre1)+(chiffre2) 
 
     print ("le resultat est", addition)
+
+def exercice6():
+    chiffre1=int(input("1er nombre: "))
+    chiffre2=int(input("2ème nombre: "))
+    soustraction=(chiffre1)-(chiffre2) 
+
+    print ("le resultat est", soustraction)
+
+def exercice7():
+    chiffre1=int(input("1er nombre: "))
+    chiffre2=int(input("2ème nombre: "))
+    multiplication=(chiffre1)*(chiffre2) 
+
+    print ("le resultat est", multiplication)
+
+def exercice8():
+    chiffre1=int(input("1er nombre: "))
+    chiffre2=int(input("2ème nombre: "))
+    division=(chiffre1)/(chiffre2) 
+
+    print ("le resultat est", division)
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -34,6 +55,12 @@ def main():
         exercice4()
     elif choix == "5":
         exercice5()
+    elif choix == "6":
+        exercice6()
+    elif choix == "7":
+        exercice7()
+    elif choix == "8":
+        exercice8()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
