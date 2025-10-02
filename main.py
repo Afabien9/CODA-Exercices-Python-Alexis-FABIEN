@@ -3,7 +3,7 @@ def exercice1():
     print("Hello World !")
 
 def exercice2():
-    prenom=(input ("ton prenom"))
+    prenom=(input ("ton prenom "))
     print("Bonjour" , prenom)
 
 def exercice3():
@@ -24,7 +24,7 @@ def exercice5():
 def exercice6():
     chiffre1=int(input("1er nombre: "))
     chiffre2=int(input("2ème nombre: "))
-    print(chiffre1, "-" , chiffre2 , "=" , chiffre1*chiffre2)
+    print(chiffre1, "x" , chiffre2 , "=" , chiffre1*chiffre2)
 
 
 def exercice7():
