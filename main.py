@@ -69,6 +69,33 @@ def exercice14():
     for k in range(5):
         print("2 x " , k+1, "=", 2*(k+1))
 
+def exercice15():
+    perimetre=int(input("longueur des coté"))
+    print("perimetre = ", (perimetre*4))
+
+def exercice16():
+    aire=int(input("longueur des coté"))
+    print("aire = ", aire**2)
+
+def exercice17():
+    conversion=int(input("combien d'euro"))
+    print(conversion, "€ =", conversion*1.1, "$")
+
+def exercice18():
+    minute=int(input("nombre de minutes "))
+    print(minute, " minute =", minute*60, " seconde")
+
+def exercice19():
+    prixttc=int(input("combien d'euro "))
+    print("prix TTC", prixttc*1.2, "€")
+
+def exercice20():
+    nom=(input("Votre Nom "))
+    age=(input("Votre Âge "))
+    print("bonjour", nom, "vous avez", age, "ans")
+    
+
+
 
 
 
@@ -104,6 +131,18 @@ def main():
         exercice13()
     elif choix == "14":
         exercice14() 
+    elif choix == "15":
+        exercice15() 
+    elif choix == "16":
+        exercice16()
+    elif choix == "17":
+        exercice17()
+    elif choix == "18":
+        exercice18()
+    elif choix == "19":
+        exercice19()
+    elif choix == "20":
+        exercice20()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
