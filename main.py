@@ -3,7 +3,8 @@ def exercice1():
     print("Hello World !")
 
 def exercice2():
-    print("Bonjour Alexis")
+    prenom=(input ("ton prenom"))
+    print("Bonjour" , prenom)
 
 def exercice3():
     print("bonjour")
@@ -17,30 +18,26 @@ def exercice4():
 def exercice5():
     chiffre1=int(input("1er nombre: "))
     chiffre2=int(input("2ème nombre: "))
-    addition=(chiffre1)+(chiffre2) 
+    print(chiffre1, "+" , chiffre2 , "=" , chiffre1*chiffre2)
 
-    print ("le resultat est", addition)
 
 def exercice6():
     chiffre1=int(input("1er nombre: "))
     chiffre2=int(input("2ème nombre: "))
-    soustraction=(chiffre1)-(chiffre2) 
+    print(chiffre1, "-" , chiffre2 , "=" , chiffre1*chiffre2)
 
-    print ("le resultat est", soustraction)
 
 def exercice7():
     chiffre1=int(input("1er nombre: "))
     chiffre2=int(input("2ème nombre: "))
-    multiplication=(chiffre1)*(chiffre2) 
+    print(chiffre1, "x" , chiffre2 , "=" , chiffre1*chiffre2) 
 
-    print ("le resultat est", multiplication)
 
 def exercice8():
     chiffre1=int(input("1er nombre: "))
     chiffre2=int(input("2ème nombre: "))
-    division=(chiffre1)/(chiffre2) 
+    print(chiffre1, "/" , chiffre2 , "=" , chiffre1*chiffre2)
 
-    print ("le resultat est", division)
 
 def exercice9():
     chiffre=int(input("chiffre: "))
@@ -59,6 +56,18 @@ def exercice11():
     moitie=(chiffre)/2
 
     print ("le resultat est", moitie)
+
+def exercice12():
+ for k in range(5):
+    print("salut ")
+
+def exercice13():
+    for k in range(5):
+        print(k+1)
+
+def exercice14():
+    for k in range(5):
+        print("2 x " , k+1, "=", 2*(k+1))
 
 
 
@@ -89,6 +98,12 @@ def main():
         exercice10()
     elif choix == "11":
         exercice11()
+    elif choix == "12":
+        exercice12()
+    elif choix == "13":
+        exercice13()
+    elif choix == "14":
+        exercice14() 
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
