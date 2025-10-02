@@ -92,7 +92,7 @@ def exercice19():
 def exercice20():
     nom=(input("Votre Nom "))
     age=(input("Votre Âge "))
-    print("bonjour", nom, "vous avez", age, "ans")
+    print(nom, "a", age, "ans")
     
 
 
