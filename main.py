@@ -109,6 +109,7 @@ def exercice22():
         print("Majeur")
     elif age <18:
         print("Mineur")
+    
 def exercice23():
     note=int(input("Quelle est ta note ? "))
     if note>20:
@@ -123,6 +124,37 @@ def exercice24():
     chiffre1=int(input("1er Chiffre "))
     chiffre2=int(input("2eme Chiffre "))
     print("Le nombre le grand est", max(chiffre1, chiffre2))
+
+def exercice25():
+    chiffre1=int(input("1er Chiffre "))
+    chiffre2=int(input("2eme Chiffre "))
+    if chiffre1 <=chiffre2:
+        print("Ta suite est croissante")
+    else:
+        print("Ta suite n'est pas croissante")
+
+def exercice26():
+    nombre=int(input("Donne moi un nombre "))
+    if nombre % 5 == 0:
+        print("Divisible par 5")
+    else:
+        print("Non Divisible par 5")
+
+def exercice27():
+    age=int(input("quelle est ton âge ? "))
+    if age>=18:
+        print("Adult")
+    elif 12<=age<=17:
+        print("ado")
+    elif age <12:
+        print("Enfant")
+
+
+
+
+
+
+
 
 
         
@@ -190,6 +222,12 @@ def main():
         exercice23()
     elif choix == "24":
         exercice24()
+    elif choix == "25":
+        exercice25()
+    elif choix == "26":
+        exercice26()
+    elif choix == "27":
+        exercice27()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
