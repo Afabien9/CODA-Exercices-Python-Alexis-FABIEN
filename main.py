@@ -119,6 +119,11 @@ def exercice23():
     elif note <10:
         print("Non Validé")
 
+def exercice24():
+    chiffre1=int(input("1er Chiffre "))
+    chiffre2=int(input("2eme Chiffre "))
+    print("Le nombre le grand est", max(chiffre1, chiffre2))
+
 
         
     
@@ -183,6 +188,8 @@ def main():
         exercice22()
     elif choix == "23":
         exercice23()
+    elif choix == "24":
+        exercice24()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
