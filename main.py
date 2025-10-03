@@ -158,6 +158,25 @@ def exercice28():
     elif temp <0:
         print("Glace")
 
+def exercice29():
+    note=int(input("quelle est votre note ? "))
+    if note>20:
+        print("Trés bien")
+        print("Note Max 20/20")
+    elif 0<=note<=8:
+        print("Recalé")
+    elif 9<=note<=11:
+        print("Passable")
+    elif 12<=note<=16:
+        print("Bien")
+    elif 17<=note<=20:
+        print("Trés Bien")
+
+def exercice30():
+    n=int(input("N+ ? "))
+    for k in range(n):
+        print(k+1)
+
 
 
 
@@ -240,6 +259,10 @@ def main():
         exercice27()
     elif choix == "28":
         exercice28()
+    elif choix == "29":
+        exercice29()
+    elif choix == "30":
+        exercice30()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
