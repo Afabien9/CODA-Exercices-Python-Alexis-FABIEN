@@ -190,9 +190,28 @@ def exercice32():
         somme+=k
         print(somme-k, "+", k, "=", somme)
 
+def exercice33():
+    table=int(input("Choisir une table entre 1 et 10 "))
+    for k in range(1, 10):
+        print(table, "x", k, "=", table*k)
 
 
+def exercice34():
+    arrive=int(input("Quelle est le chiffre d'arrivé pour votre décompte ? " ))
+    for k in range(0, arrive, 2):
+        print(k+2)
 
+def exercice35():
+    carre=int(input("Donne moi un carré parfait N ? "))
+    for k in range(1, carre):
+        n=carre**2
+    print(carre,"²", "=", n)
+
+def exercice36():
+    mot=(input("donne moi un mot "))
+    fois=int(input("combien de fois tu veux repeté le mot ? "))
+    for k in range(fois):
+        print(mot)
 
 
 
@@ -279,6 +298,14 @@ def main():
         exercice31()
     elif choix == "32":
         exercice32()
+    elif choix == "33":
+        exercice33()
+    elif choix == "34":
+        exercice34()
+    elif choix == "35":
+        exercice35()
+    elif choix == "36":
+        exercice36()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
