@@ -239,6 +239,32 @@ def exercice38():
     else:
         print("symbole non autorisé veuillez choisir un opérateur valide. ")
 
+def exercice39():
+    mdp=input("Entrez un mot de passe : ")
+
+    if len(mdp) >=6:
+        print("Valide")
+    else:
+        print("Trop court")
+
+def exercice40():
+    
+    saisie = input("Entrez une suite de nombres séparés par des espaces : ")
+
+    nombres = [int(x) for x in saisie.split()]
+
+    moyenne = sum(nombres) / len(nombres)
+
+    print("La moyenne est :", moyenne)
+
+
+
+
+
+
+
+
+
 
 
 
@@ -337,6 +363,12 @@ def main():
         exercice37()
     elif choix == "38":
         exercice38()
+    elif choix == "39":
+        exercice39()
+    elif choix == "40":
+        exercice40()
+    elif choix == "41":
+        exercice41()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
