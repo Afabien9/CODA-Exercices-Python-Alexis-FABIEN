@@ -18,13 +18,13 @@ def exercice4():
 def exercice5():
     chiffre1=int(input("1er nombre: "))
     chiffre2=int(input("2ème nombre: "))
-    print(chiffre1, "+" , chiffre2 , "=" , chiffre1*chiffre2)
+    print(chiffre1, "+" , chiffre2 , "=" , chiffre1+chiffre2)
 
 
 def exercice6():
     chiffre1=int(input("1er nombre: "))
     chiffre2=int(input("2ème nombre: "))
-    print(chiffre1, "x" , chiffre2 , "=" , chiffre1*chiffre2)
+    print(chiffre1, "-" , chiffre2 , "=" , chiffre1-chiffre2)
 
 
 def exercice7():
@@ -213,6 +213,33 @@ def exercice36():
     for k in range(fois):
         print(mot)
 
+def exercice37():
+    n=int(input("Entrez le nombre de lignes : "))
+
+    for i in range(1, n + 1):
+        print(" " * (n - i), end="")
+        print("*" * (2 * i - 1))
+
+def exercice38():
+    a=float(input("Choisir le 1er nombre "))
+    symboles_autorises = ('+', '-', '*', '/')
+    operateur=(input("Entrer un operateur (+, -, *, /) : "))
+    b=float(input("Choisir le 2ème nombre "))
+    if operateur in symboles_autorises :
+        
+        if operateur == '+':
+            print(a, "+", b, "=", a + b)
+        elif operateur == '-':
+            print(a, "-", b, "=", a - b)
+        elif operateur == '*':
+            print(a, "*", b, "=", a * b)
+        elif operateur == '/':
+            print(a, "/", b, "=", a / b)
+
+    else:
+        print("symbole non autorisé veuillez choisir un opérateur valide. ")
+
+
 
 
 
@@ -306,6 +333,10 @@ def main():
         exercice35()
     elif choix == "36":
         exercice36()
+    elif choix == "37":
+        exercice37()
+    elif choix == "38":
+        exercice38()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
