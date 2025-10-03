@@ -36,7 +36,7 @@ def exercice7():
 def exercice8():
     chiffre1=int(input("1er nombre: "))
     chiffre2=int(input("2ème nombre: "))
-    print(chiffre1, "/" , chiffre2 , "=" , chiffre1*chiffre2)
+    print(chiffre1, "/" , chiffre2 , "=" , chiffre1/chiffre2)
 
 
 def exercice9():
@@ -177,6 +177,18 @@ def exercice30():
     for k in range(n):
         print(k+1)
 
+def exercice31():
+    depart=int(input("Quelle est le chiffre de départ pour votre décompte ? " ))
+    for k in range(depart, 0, -1):
+        print(k)
+
+
+def exercice32():
+    chiffre=int(input("Quelle chiffre souhaitez vous aditionner ? "))
+    somme=0
+    for k in range(1,chiffre+1):
+        somme+=k
+        print(somme-k, "+", k, "=", somme)
 
 
 
@@ -263,6 +275,10 @@ def main():
         exercice29()
     elif choix == "30":
         exercice30()
+    elif choix == "31":
+        exercice31()
+    elif choix == "32":
+        exercice32()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
